@@ -1,6 +1,6 @@
 # PUBG: BATTLEGROUNDS at EWC 26 - Day 2 - Group Stage
 
-Source: https://www.youtube.com/watch?v=rrgg0YwiqxQ · Duration: 4:59:22 · Uploaded: 2026-07-22 · Transcript: auto-captions (en) · 12 incidents
+Source: https://www.youtube.com/watch?v=rrgg0YwiqxQ · Duration: 4:59:22 · Uploaded: 2026-07-22 · Transcript: auto-captions (en) · Killfeed: 480p icon scan · 16 incidents (4 from the killfeed, 12 from the casters)
 
 ## 1. [32:23](https://youtu.be/rrgg0YwiqxQ?t=1943) — mortar ×1 [casters]
 
@@ -34,18 +34,34 @@ Source: https://www.youtube.com/watch?v=rrgg0YwiqxQ · Duration: 4:59:22 · Uplo
 
 > … there's just so much going on all the time. **Mortars**, BRDMs, people above us, you know, we're just trying not to die
 
-## 9. [3:42:47](https://youtu.be/rrgg0YwiqxQ?t=13367) — mortar ×1 [casters]
+## 9. [3:42:45](https://youtu.be/rrgg0YwiqxQ?t=13365) — 1 mortar kill [killfeed]
+
+> Mortar icon in the killfeed — 1 separate mortar across 2 sampled frames (best match 0.85).
+
+## 10. [3:42:47](https://youtu.be/rrgg0YwiqxQ?t=13367) — mortar ×1 [casters]
 
 > … north side as well. You see the knocks coming through now. **Mortars** have arrived as well as we see again just explosions
 
-## 10. [4:24:37](https://youtu.be/rrgg0YwiqxQ?t=15877) — mortar ×1 [casters]
+## 11. [4:24:15](https://youtu.be/rrgg0YwiqxQ?t=15855) — 1 mortar kill [killfeed]
+
+> Mortar icon in the killfeed — 1 separate mortar across 2 sampled frames (best match 0.88).
+
+## 12. [4:24:37](https://youtu.be/rrgg0YwiqxQ?t=15877) — mortar ×1 [casters]
 
 > … >> More points come the way of Falcons. >> He has more **mortars** in hand coming towards it.
 
-## 11. [4:26:40](https://youtu.be/rrgg0YwiqxQ?t=16000) — mortar ×6 [casters]
+## 13. [4:26:40](https://youtu.be/rrgg0YwiqxQ?t=16000) — mortar ×6 [casters]
 
 > … that position without putting yourself at major risk. And you see the **mortar** still falling over in Falcon's territory. But TIG is going to return the favor. Both Tailoo and Falcons are shooting **mortars**. >> Tick finds calm. What a shot. Oh my god. And another one that's in a different position. Back to back. Tickometry…
 
-## 12. [4:32:27](https://youtu.be/rrgg0YwiqxQ?t=16347) — C4 ×1 [casters]
+## 14. [4:26:51](https://youtu.be/rrgg0YwiqxQ?t=16011) — 1 mortar kill [killfeed]
+
+> Mortar icon in the killfeed — 1 separate mortar across 5 sampled frames (best match 0.96).
+
+## 15. [4:32:27](https://youtu.be/rrgg0YwiqxQ?t=16347) — C4 ×1 [casters]
 
 > … spotted out Suz. It's a **C4**. They're going to be driving that straight onto Petra Road here.
+
+## 16. [4:49:51](https://youtu.be/rrgg0YwiqxQ?t=17391) — 1 mortar kill [killfeed]
+
+> Mortar icon in the killfeed — 1 separate mortar across 2 sampled frames (best match 0.89).
