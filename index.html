@@ -57,6 +57,20 @@ ul.videos li {
 ul.videos a { font-weight: 600; text-decoration: none; }
 ul.videos a:hover { text-decoration: underline; }
 .counts { color: var(--muted); font-size: .85rem; margin-top: .2rem; }
+.uploaded {
+  color: var(--muted); font-size: .78rem; letter-spacing: .03em;
+  text-transform: uppercase; font-weight: 600;
+}
+.subtitle { margin: 0 0 1.25rem; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+.subtitle .uploaded { text-transform: none; letter-spacing: 0; font-size: .9rem; }
+.sort { margin: 0 0 1rem; color: var(--muted); font-size: .85rem; }
+.sort button {
+  font: inherit; color: var(--accent); background: none; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; padding: .15rem .7rem; margin-left: .35rem;
+}
+.sort button[aria-pressed="true"] {
+  background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600;
+}
 .empty { color: var(--muted); }
 footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; }
 </style>
@@ -64,14 +78,43 @@ footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; }
 <body>
 <div class="wrap">
 <h1>PUBG mortar moments</h1>
-<p class="meta">5 broadcasts · 85 mortar moments · every timestamp starts 30 seconds early so you land before the action.</p>
-<ul class="videos">
-<li><a href="wANfWNwGsI0.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 4 - Finals</a><div class="counts">42 moments — 16 from the killfeed · 26 from the casters</div></li>
-<li><a href="pe0zg-i9wEg.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 1 - Group Stage</a><div class="counts">23 moments — 23 from the casters</div></li>
-<li><a href="rrgg0YwiqxQ.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 2 - Group Stage</a><div class="counts">12 moments — 12 from the casters</div></li>
-<li><a href="uViPQMx3isw.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 3 - Group Stage</a><div class="counts">8 moments — 8 from the casters</div></li>
-<li><a href="-VCv6MsCtU8.html">Funny PUBG Mortar Clip</a><div class="counts">0 moments — nothing found</div></li>
+<p class="meta">5 broadcasts · 85 mortar moments · uploaded 2022-05-29 to 2026-07-24 · listed oldest first so you can watch them in order. Every timestamp starts 30 seconds early so you land before the action.</p>
+<div class="sort">Sort by <button type="button" data-sort="date" aria-pressed="true">upload date</button><button type="button" data-sort="title" aria-pressed="false">title</button><button type="button" data-sort="moments" aria-pressed="false">moments</button></div>
+<ul class="videos" id="videos">
+<li data-date="2022-05-29" data-title="funny pubg mortar clip" data-moments="0"><div class="uploaded">2022-05-29</div><a href="-VCv6MsCtU8.html">Funny PUBG Mortar Clip</a><div class="counts">0 moments — nothing found</div></li>
+<li data-date="2026-07-21" data-title="pubg: battlegrounds at ewc 26 - day 1 - group stage" data-moments="23"><div class="uploaded">2026-07-21</div><a href="pe0zg-i9wEg.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 1 - Group Stage</a><div class="counts">23 moments — 23 from the casters</div></li>
+<li data-date="2026-07-22" data-title="pubg: battlegrounds at ewc 26 - day 2 - group stage" data-moments="12"><div class="uploaded">2026-07-22</div><a href="rrgg0YwiqxQ.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 2 - Group Stage</a><div class="counts">12 moments — 12 from the casters</div></li>
+<li data-date="2026-07-23" data-title="pubg: battlegrounds at ewc 26 - day 3 - group stage" data-moments="8"><div class="uploaded">2026-07-23</div><a href="uViPQMx3isw.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 3 - Group Stage</a><div class="counts">8 moments — 8 from the casters</div></li>
+<li data-date="2026-07-24" data-title="pubg: battlegrounds at ewc 26 - day 4 - finals" data-moments="42"><div class="uploaded">2026-07-24</div><a href="wANfWNwGsI0.html">PUBG: BATTLEGROUNDS at EWC 26 - Day 4 - Finals</a><div class="counts">42 moments — 16 from the killfeed · 26 from the casters</div></li>
 </ul>
+
+<script>
+(function () {
+  var list = document.getElementById('videos');
+  var buttons = document.querySelectorAll('.sort button');
+  function apply(key) {
+    var items = Array.prototype.slice.call(list.children);
+    items.sort(function (a, b) {
+      if (key === 'moments') {
+        return (+b.dataset.moments) - (+a.dataset.moments);
+      }
+      if (key === 'title') {
+        return a.dataset.title.localeCompare(b.dataset.title);
+      }
+      return a.dataset.date.localeCompare(b.dataset.date);  // oldest first
+    });
+    items.forEach(function (item) { list.appendChild(item); });
+    buttons.forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.dataset.sort === key));
+    });
+  }
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () { apply(button.dataset.sort); });
+  });
+  apply('date');
+})();
+</script>
+
 </div>
 </body>
 </html>

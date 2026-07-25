@@ -1,6 +1,6 @@
 # PUBG: BATTLEGROUNDS at EWC 26 - Day 4 - Finals
 
-Source: https://www.youtube.com/watch?v=wANfWNwGsI0 · Duration: 4:52:50 · Transcript: auto-captions (en) · Killfeed: 480p icon scan · 42 incidents (16 from the killfeed, 26 from the casters)
+Source: https://www.youtube.com/watch?v=wANfWNwGsI0 · Duration: 4:52:50 · Uploaded: 2026-07-24 · Transcript: auto-captions (en) · Killfeed: 480p icon scan · 42 incidents (16 from the killfeed, 26 from the casters)
 
 ## 1. [2:56](https://youtu.be/wANfWNwGsI0?t=176) — mortar ×4 [casters]
 

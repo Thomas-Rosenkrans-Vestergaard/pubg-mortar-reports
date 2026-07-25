@@ -57,6 +57,20 @@ ul.videos li {
 ul.videos a { font-weight: 600; text-decoration: none; }
 ul.videos a:hover { text-decoration: underline; }
 .counts { color: var(--muted); font-size: .85rem; margin-top: .2rem; }
+.uploaded {
+  color: var(--muted); font-size: .78rem; letter-spacing: .03em;
+  text-transform: uppercase; font-weight: 600;
+}
+.subtitle { margin: 0 0 1.25rem; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+.subtitle .uploaded { text-transform: none; letter-spacing: 0; font-size: .9rem; }
+.sort { margin: 0 0 1rem; color: var(--muted); font-size: .85rem; }
+.sort button {
+  font: inherit; color: var(--accent); background: none; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; padding: .15rem .7rem; margin-left: .35rem;
+}
+.sort button[aria-pressed="true"] {
+  background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600;
+}
 .empty { color: var(--muted); }
 footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; }
 </style>
@@ -65,7 +79,8 @@ footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; }
 <div class="wrap">
 <a class="back" href="index.html">&larr; All videos</a>
 <h1>Funny PUBG Mortar Clip</h1>
-<p class="meta">Source: https://www.youtube.com/watch?v=-VCv6MsCtU8 · Duration: 1:12 · Transcript: auto-captions (en) · 0 incidents</p>
+<p class="subtitle"><span class="uploaded">Uploaded 2022-05-29</span> · <a href="https://www.youtube.com/watch?v=-VCv6MsCtU8">Watch on YouTube</a></p>
+<p class="meta">Source: https://www.youtube.com/watch?v=-VCv6MsCtU8 · Duration: 1:12 · Uploaded: 2022-05-29 · Transcript: auto-captions (en) · 0 incidents</p>
 <p class="empty">No mortar or C4 moments found in this video.</p>
 </div>
 </body>

@@ -1,6 +1,6 @@
 # PUBG: BATTLEGROUNDS at EWC 26 - Day 2 - Group Stage
 
-Source: https://www.youtube.com/watch?v=rrgg0YwiqxQ · Duration: 4:59:22 · Transcript: auto-captions (en) · 12 incidents
+Source: https://www.youtube.com/watch?v=rrgg0YwiqxQ · Duration: 4:59:22 · Uploaded: 2026-07-22 · Transcript: auto-captions (en) · 12 incidents
 
 ## 1. [32:23](https://youtu.be/rrgg0YwiqxQ?t=1943) — mortar ×1 [casters]
 
