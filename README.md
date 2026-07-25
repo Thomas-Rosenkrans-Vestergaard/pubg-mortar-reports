@@ -19,9 +19,12 @@ every entry quotes the surrounding words. Skim the quote before forwarding.
 
 ## Contents
 
-- `index.html` — the landing page, listing every broadcast
+- `index.html` — the landing page, listing every broadcast oldest first
 - `<video_id>.html` — one page per broadcast
 - `<video_id>.md` — the same report in Markdown, which is what the site is built from
+
+Only real broadcasts belong here. `index.html` is generated from every `*.md` present, so
+anything dropped in this directory gets published.
 
 ## Updating
 
